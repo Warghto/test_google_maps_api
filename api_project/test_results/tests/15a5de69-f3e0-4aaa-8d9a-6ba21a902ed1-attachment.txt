@@ -1,0 +1,45 @@
+Method POST
+https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+{"status":"OK","place_id":"602a10e27ee1690326f1e46873dfe6ce","scope":"APP","reference":"edfb052d15a62f35882c0c661c3bcd1cedfb052d15a62f35882c0c661c3bcd1c","id":"edfb052d15a62f35882c0c661c3bcd1c"}
+Status code is Fine: 200
+200
+All fields are good
+['status', 'place_id', 'scope', 'reference', 'id']
+Checked: status
+Method GET POST
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=602a10e27ee1690326f1e46873dfe6ce
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"29, side layout, cohen 09","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Status code is Fine: 200
+200
+['location', 'accuracy', 'name', 'phone_number', 'address', 'types', 'website', 'language']
+Checked: address
+Method PUT
+https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+{"msg":"Address successfully updated"}
+Status code is Fine: 200
+200
+All fields are good
+['msg']
+Checked: msg
+Method GET PUT
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=602a10e27ee1690326f1e46873dfe6ce
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"Bandery street, AYAYAYYA","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Status code is Fine: 200
+200
+['location', 'accuracy', 'name', 'phone_number', 'address', 'types', 'website', 'language']
+Checked: address
+Method DELETE
+https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+{"status":"OK"}
+Status code is Fine: 200
+200
+['status']
+Checked: status
+Method GET DELETE
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=602a10e27ee1690326f1e46873dfe6ce
+{"msg":"Get operation failed, looks like place_id  doesn't exists"}
+Status code is Fine: 404
+404
+['msg']
+WORD IS FINE: msg
+Test Creating updating and deleting locations was fine
